@@ -1,0 +1,284 @@
+--单维
+{
+  "status": 200,
+  "msg": "OK",
+  "data": {
+    "max": 2500,
+    "min": 50,
+    "xList": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "G",
+      "K"
+    ],
+    "yList": [
+      800,
+      1000,
+      2000,
+      2500,
+      50,
+      1500,
+      800,
+      700,
+      1800,
+      1350,
+      1200
+    ],
+    "zList": "A"
+  }
+}
+
+--多维
+{
+  "status": 200,
+  "msg": "OK",
+  "data": {
+    "max": 30000,
+    "min": 200,
+    "xList": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "G",
+      "K"
+    ],
+    "yList": {
+      "yList1": [
+        5000,
+        1314,
+        30000,
+        30000,
+        200,
+        25000,
+        5000,
+        700,
+        10000,
+        12000,
+        1800
+      ],
+      "yList2": [
+        400,
+        1314,
+        25000,
+        30000,
+        333,
+        20000,
+        300,
+        6000,
+        12000,
+        11000,
+        6000
+      ]
+    },
+    "zList": [
+      "AZ",
+      "BZ"
+    ]
+  }
+}
+
+--散点
+{
+  "status": 200,
+  "msg": "OK",
+  "data": [
+    {
+      "A": {
+        "cId": "0160ad7910b54fdf9f8953c912dcdd3d",
+        "cScreenId": "e0b505a9e2d2441884216edbf9170d64",
+        "cMkMc": "A",
+        "cCategoryMc": "B",
+        "cCategoryEjfl": "C",
+        "cCategoryXl": "",
+        "cSjMc": "A",
+        "cSjSl": "132",
+        "cSdSl": null,
+        "cXsWs": null,
+        "cSjDw": "家",
+        "cBz": null,
+        "cCreated": 1587862950000,
+        "cUpdated": 1587862950000
+      }
+    },
+    {
+      "B": {
+        "cId": "ac66003ee67846fa975423620c5c8138",
+        "cScreenId": "e0b505a9e2d2441884216edbf9170d64",
+        "cMkMc": "A",
+        "cCategoryMc": "B",
+        "cCategoryEjfl": "C",
+        "cCategoryXl": "",
+        "cSjMc": "B",
+        "cSjSl": "200",
+        "cSdSl": null,
+        "cXsWs": null,
+        "cSjDw": "家",
+        "cBz": null,
+        "cCreated": 1587863099000,
+        "cUpdated": 1587863099000
+      }
+    },
+    {
+      "C": {
+        "cId": "f7c78a2381474f85b7bd1967c7b042ed",
+        "cScreenId": "e0b505a9e2d2441884216edbf9170d64",
+        "cMkMc": "A",
+        "cCategoryMc": "B",
+        "cCategoryEjfl": "C",
+        "cCategoryXl": "",
+        "cSjMc": "C",
+        "cSjSl": "333",
+        "cSdSl": null,
+        "cXsWs": null,
+        "cSjDw": "家",
+        "cBz": null,
+        "cCreated": 1587863250000,
+        "cUpdated": 1587863250000
+      }
+    },
+    {
+      "D": {
+        "cId": "eada914ce9154817987bf8e359d555e5",
+        "cScreenId": "e0b505a9e2d2441884216edbf9170d64",
+        "cMkMc": "A",
+        "cCategoryMc": "B",
+        "cCategoryEjfl": "C",
+        "cCategoryXl": "",
+        "cSjMc": "D",
+        "cSjSl": "300",
+        "cSdSl": null,
+        "cXsWs": null,
+        "cSjDw": "家",
+        "cBz": null,
+        "cCreated": 1587863169000,
+        "cUpdated": 1587863169000
+      }
+    },
+    {
+      "E": {
+        "cId": "ec68c6b43dee49ffaaacd4328f130339",
+        "cScreenId": "e0b505a9e2d2441884216edbf9170d64",
+        "cMkMc": "A",
+        "cCategoryMc": "B",
+        "cCategoryEjfl": "C",
+        "cCategoryXl": "",
+        "cSjMc": "E",
+        "cSjSl": "100",
+        "cSdSl": null,
+        "cXsWs": null,
+        "cSjDw": "家",
+        "cBz": null,
+        "cCreated": 1587863211000,
+        "cUpdated": 1587863211000
+      }
+    },
+    {
+      "F": {
+        "cId": "728d0760272a48a586f62eca8323277a",
+        "cScreenId": "e0b505a9e2d2441884216edbf9170d64",
+        "cMkMc": "A",
+        "cCategoryMc": "B",
+        "cCategoryEjfl": "C",
+        "cCategoryXl": "",
+        "cSjMc": "F",
+        "cSjSl": "500",
+        "cSdSl": null,
+        "cXsWs": null,
+        "cSjDw": "家",
+        "cBz": null,
+        "cCreated": 1587865848000,
+        "cUpdated": 1587865848000
+      }
+    },
+    {
+      "G": {
+        "cId": "7e5f164e170342d18357a98abb139611",
+        "cScreenId": "e0b505a9e2d2441884216edbf9170d64",
+        "cMkMc": "A",
+        "cCategoryMc": "B",
+        "cCategoryEjfl": "C",
+        "cCategoryXl": null,
+        "cSjMc": "G",
+        "cSjSl": "100",
+        "cSdSl": null,
+        "cXsWs": null,
+        "cSjDw": "家",
+        "cBz": null,
+        "cCreated": 1587865927000,
+        "cUpdated": 1587865927000
+      }
+    }
+  ]
+}
+
+-- 列表
+{
+  "status": 200,
+  "msg": "OK",
+  "data": [
+    {
+      "lId": "c235ec9ac9654e2fbf784a004d73caa4",
+      "lScreenId": "e0b505a9e2d2441884216edbf9170d64",
+      "lMkMc": "重点目标",
+      "lCategoryMc": "活动举办",
+      "lCategoryEjfl": "全市大型活动举办信息",
+      "lCategoryXl": null,
+      "lBz": "kz_1:名称 kz_2:地点 kz_3:责任单位 kz_4:预计人数 kz_5:安保力量 kz_6:监管单位",
+      "lKz1": "GEM南京演唱会",
+      "lKz2": "南京市奥体中心",
+      "lKz3": "建邺分局",
+      "lKz4": "5000",
+      "lKz5": "50",
+      "lKz6": "建邺分局",
+      "lCreated": 1587891965000,
+      "lUpdated": 1587891965000
+    },
+    {
+      "lId": "c5d410316548454ab2cc36264d7d60f9",
+      "lScreenId": "e0b505a9e2d2441884216edbf9170d64",
+      "lMkMc": "重点目标",
+      "lCategoryMc": "活动举办",
+      "lCategoryEjfl": "全市大型活动举办信息",
+      "lCategoryXl": null,
+      "lBz": "kz_1:名称 kz_2:地点 kz_3:责任单位 kz_4:预计人数 kz_5:安保力量 kz_6:监管单位",
+      "lKz1": "中国机场发布会",
+      "lKz2": "成都市天府区",
+      "lKz3": "天府分局",
+      "lKz4": "1000",
+      "lKz5": "100",
+      "lKz6": "天府分局",
+      "lCreated": 1587891965000,
+      "lUpdated": 1587891965000
+    },
+    {
+      "lId": "d5c747cc3c324368bb9bb5c6e63d61e2",
+      "lScreenId": "e0b505a9e2d2441884216edbf9170d64",
+      "lMkMc": "重点目标",
+      "lCategoryMc": "活动举办",
+      "lCategoryEjfl": "全市大型活动举办信息",
+      "lCategoryXl": null,
+      "lBz": "kz_1:名称 kz_2:地点 kz_3:责任单位 kz_4:预计人数 kz_5:安保力量 kz_6:监管单位",
+      "lKz1": "张天爱兰州演唱会",
+      "lKz2": "兰州市城关区",
+      "lKz3": "城关分局",
+      "lKz4": "2000",
+      "lKz5": "200",
+      "lKz6": "城关分局",
+      "lCreated": 1587891965000,
+      "lUpdated": 1587891965000
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.landasoft.xysh.mymapper.ScreenChartMapperCustom">
+    <select id="getChartMaxAndMinData" resultType="map">
+      SELECT
+          max(c.C_SJ_SL) AS max,
+          min(c.C_SJ_SL) AS min
+      FROM
+          t_screen_chart c
+      WHERE
+          c.C_SCREEN_ID = #{screenId}
+      AND c.C_MK_MC = #{mkmc}
+      AND c.C_CATEGORY_MC = #{categoryMc}
+      AND c.C_CATEGORY_EJFL = #{categoryEjfl}
+        <if test="categoryXl != null and categoryXl != ''">
+            AND c.C_CATEGORY_XL = #{categoryXl}
+        </if>
+    </select>
+
+    <select id="getChartsZlist" resultType="list">
+        SELECT
+            c.c_category_xl
+        FROM
+            t_screen_chart c
+        WHERE
+            c.c_screen_id = #{screenId}
+            and c.c_mk_mc = #{mkmc}
+            and c.c_category_mc = #{categoryMc}
+            and c.c_category_ejfl = #{categoryEjfl}
+            <if test="categoryXl != null and categoryXl != ''">
+                and c.c_category_xl = #{categoryXl}
+            </if>
+        GROUP BY
+            c.c_category_xl
+  </select>
+
+    <select id="getScatterData" resultType="map">
+        SELECT
+            c.*
+        FROM
+            t_screen_chart c
+        WHERE
+            c.c_screen_id = #{screenId}
+            and c.c_mk_mc = #{mkmc}
+            and c.c_category_mc = #{categoryMc}
+            and c.c_category_ejfl = #{categoryEjfl}
+            <if test="categoryXl != null and categoryXl != ''">
+                and c.c_category_xl = #{categoryXl}
+            </if>
+    </select>
+
+    <select id="getScatterDataRMap" resultType="com.landasoft.xysh.pojo.TScreenChart">
+        SELECT
+            c.*
+        FROM
+            t_screen_chart c
+        WHERE
+            c.c_screen_id = #{screenId}
+            and c.c_mk_mc = #{mkmc}
+            and c.c_category_mc = #{categoryMc}
+            and c.c_category_ejfl = #{categoryEjfl}
+            <if test="categoryXl != null and categoryXl != ''">
+                and c.c_category_xl = #{categoryXl}
+            </if>
+    </select>
+</mapper>

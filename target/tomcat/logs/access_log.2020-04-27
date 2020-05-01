@@ -1,0 +1,5 @@
+127.0.0.1 - - [27/Apr/2020:14:40:41 +0800] "GET /kafka/producer HTTP/1.1" 200 14 http-bio-8080-exec-2 30478
+127.0.0.1 - - [27/Apr/2020:14:40:41 +0800] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-8080-exec-3 8
+127.0.0.1 - - [27/Apr/2020:14:46:39 +0800] "GET /kafka/producer HTTP/1.1" 200 14 http-bio-8080-exec-2 30437
+127.0.0.1 - - [27/Apr/2020:15:44:56 +0800] "GET /kafka/producer HTTP/1.1" 200 14 http-bio-8080-exec-2 979
+127.0.0.1 - - [27/Apr/2020:16:01:28 +0800] "GET /kafka/producer HTTP/1.1" 200 14 http-bio-8080-exec-5 39
