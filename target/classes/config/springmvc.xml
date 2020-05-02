@@ -8,7 +8,7 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<!-- 加载属性文件 -->
-	<context:property-placeholder location="classpath:resource/config.properties" />
+	<!--<context:property-placeholder location="classpath:resource/config.properties" />-->
 	<!-- 包扫描器 -->
 	<context:component-scan base-package="com.landasoft.xysh.controller" />
 	<!-- 注解驱动 -->

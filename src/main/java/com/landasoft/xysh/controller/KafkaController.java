@@ -13,13 +13,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/kafka")
 public class KafkaController {
 
-    @Autowired
-    private KafkaTemplate<Object,Object> kafkaTemplate;
+    //@Autowired
+    //private KafkaTemplate<Object,Object> kafkaTemplate;
 
     @RequestMapping("/producer")
     @ResponseBody
     public String testKafkaProducer(){
-        kafkaTemplate.send("test","This is kafka producer");
-        return "kafka producer";
+        //kafkaTemplate.send("test","This is kafka producer");
+        //return "kafka producer";
+        return null;
     }
 }

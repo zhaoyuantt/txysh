@@ -13,7 +13,7 @@
 		<constructor-arg>
 			<map>
 				<!---->
-				<entry key="bootstrap.servers" value="192.168.25.130:9092"/>
+				<entry key="bootstrap.servers" value="192.168.25.130:9092,192.168.25.130:9093,192.168.25.130:9094"/>
 				<!--组名 消费者 生产者必须组名一致-->
 				<entry key="group.id" value="0"/>
 				<!--发送失败重试次数-->
@@ -40,12 +40,20 @@
 	</bean>
 
 	<!-- 创建kafkatemplate bean，使用的时候，只需要注入这个bean，即可使用template的send消息方法 -->
-	<bean id="KafkaTemplate" class="org.springframework.kafka.core.KafkaTemplate">
+	<bean id="kafkaTemplate_jidiwuliu" class="org.springframework.kafka.core.KafkaTemplate">
 		<constructor-arg ref="producerFactory"/>
 		<!--是否自动刷新-->
 		<constructor-arg name="autoFlush" value="true"/>
 		<!--默认的主题 -->
-		<property name="defaultTopic" value="taojie"/>
+		<property name="defaultTopic" value="jidiwuliu"/>
+	</bean>
+
+	<bean id="kafkaTemplate_zhongdianmubiao" class="org.springframework.kafka.core.KafkaTemplate">
+		<constructor-arg ref="producerFactory"/>
+		<!--是否自动刷新-->
+		<constructor-arg name="autoFlush" value="true"/>
+		<!--默认的主题 -->
+		<property name="defaultTopic" value="zhongdianmubiao"/>
 	</bean>
 
 </beans>
